@@ -48,7 +48,7 @@ namespace A133590.Ejercicio44
                         int indice = -1;
                         if(Int32.TryParse(cadenasComando[1], out indice))
                         {
-                            if(indice > 0 && indice < lista.Count)
+                            if(indice >= 0 && indice < lista.Count)
                             {
                                 string aux = lista[indice];
                                 lista.RemoveAt(indice);
